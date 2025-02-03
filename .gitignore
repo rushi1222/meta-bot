@@ -1,5 +1,7 @@
 # Ignore the virtual environment folder
 .venv/
+# Ignore Python virtual environment
+.venv/
 
 # Ignore config.yaml (or any sensitive files)
 config.yaml
@@ -7,5 +9,7 @@ config.yaml
 # Ignore compiled Python files
 __pycache__/
 
+# Ignore macOS system files
+.DS_Store
 # Ignore macOS system files
 .DS_Store
