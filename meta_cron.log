@@ -1,0 +1,448 @@
+✅ Opened Meta Careers login page.
+✅ Entered Email
+✅ Entered Password
+➡️ Pressed ENTER to log in.
+✅ Login successful. Now opening job links.
+🌐 Opening job link: https://www.metacareers.com/jobs/1068968808205718/
+✅ only trying to close the previous tab
+✅ Detected element with class '_9csu '
+Element text content: Personal Information
+✅ Checked checkbox with id: 2276949392586359
+✅ Checked checkbox with id: 357313535643925
+✅ Checked checkbox with id: 353745228761021
+❌ Failed to find or click the 'Yes' radio button for work eligibility. Error: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000102e56bac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x0000000102e4f20c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x00000001029b5afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x00000001029fc8f8 cxxbridge1$string$len + 383648
+4   chromedriver                        0x0000000102a3db94 cxxbridge1$string$len + 650556
+5   chromedriver                        0x00000001029f0ba0 cxxbridge1$string$len + 335176
+6   chromedriver                        0x0000000102e1f664 cxxbridge1$str$ptr + 2498188
+7   chromedriver                        0x0000000102e22978 cxxbridge1$str$ptr + 2511264
+8   chromedriver                        0x0000000102e04d04 cxxbridge1$str$ptr + 2389292
+9   chromedriver                        0x0000000102e23220 cxxbridge1$str$ptr + 2513480
+10  chromedriver                        0x0000000102df5cec cxxbridge1$str$ptr + 2327828
+11  chromedriver                        0x0000000102e3f8d4 cxxbridge1$str$ptr + 2629884
+12  chromedriver                        0x0000000102e3fa5c cxxbridge1$str$ptr + 2630276
+13  chromedriver                        0x0000000102e4ee80 cxxbridge1$str$ptr + 2692776
+14  libsystem_pthread.dylib             0x00000001975282e4 _pthread_start + 136
+15  libsystem_pthread.dylib             0x00000001975230fc thread_start + 8
+
+❌ Failed to find or click the 'No' radio button for requires sponsorship. Error: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000102e56bac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x0000000102e4f20c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x00000001029b5afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x00000001029fc8f8 cxxbridge1$string$len + 383648
+4   chromedriver                        0x0000000102a3db94 cxxbridge1$string$len + 650556
+5   chromedriver                        0x00000001029f0ba0 cxxbridge1$string$len + 335176
+6   chromedriver                        0x0000000102e1f664 cxxbridge1$str$ptr + 2498188
+7   chromedriver                        0x0000000102e22978 cxxbridge1$str$ptr + 2511264
+8   chromedriver                        0x0000000102e04d04 cxxbridge1$str$ptr + 2389292
+9   chromedriver                        0x0000000102e23220 cxxbridge1$str$ptr + 2513480
+10  chromedriver                        0x0000000102df5cec cxxbridge1$str$ptr + 2327828
+11  chromedriver                        0x0000000102e3f8d4 cxxbridge1$str$ptr + 2629884
+12  chromedriver                        0x0000000102e3fa5c cxxbridge1$str$ptr + 2630276
+13  chromedriver                        0x0000000102e4ee80 cxxbridge1$str$ptr + 2692776
+14  libsystem_pthread.dylib             0x00000001975282e4 _pthread_start + 136
+15  libsystem_pthread.dylib             0x00000001975230fc thread_start + 8
+
+✅'work_auth_question found'
+✅ Clicked on the 'next_link_1' button
+✅ Detected element with class '_9csu '
+Element text content: Education
+✅ Clicked on the 'next_link_2' button
+✅ Detected element with class '_9csu '
+Element text content: Experience and Skills
+✅ Clicked on the 'next_link_3' button
+✅ Detected element with class '_9csu '
+Element text content: Voluntary Self-Identification
+✅ Clicked on the 'next_link_4' button
+❌ Failed to open job: https://www.metacareers.com/jobs/1068968808205718/ at review and submit Error: Message: element click intercepted: Element <button id="app...Button" class="_9cs2 _97fe">Submit</button> is not clickable at point (1171, 706). Other element would receive the click: <div class="x6s0dn4 x78zum5 xdt5ytf xh8yej3 xsxhxmc xealedp">...</div>
+  (Session info: chrome=133.0.6943.54)
+Stacktrace:
+0   chromedriver                        0x0000000102e56bac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x0000000102e4f20c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x00000001029b5afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000102a02398 cxxbridge1$string$len + 406848
+4   chromedriver                        0x0000000102a00928 cxxbridge1$string$len + 400080
+5   chromedriver                        0x00000001029fe73c cxxbridge1$string$len + 391396
+6   chromedriver                        0x00000001029fdb38 cxxbridge1$string$len + 388320
+7   chromedriver                        0x00000001029f2630 cxxbridge1$string$len + 341976
+8   chromedriver                        0x00000001029f20bc cxxbridge1$string$len + 340580
+9   chromedriver                        0x0000000102a3db94 cxxbridge1$string$len + 650556
+10  chromedriver                        0x00000001029f0ba0 cxxbridge1$string$len + 335176
+11  chromedriver                        0x0000000102e1f664 cxxbridge1$str$ptr + 2498188
+12  chromedriver                        0x0000000102e22978 cxxbridge1$str$ptr + 2511264
+13  chromedriver                        0x0000000102e04d04 cxxbridge1$str$ptr + 2389292
+14  chromedriver                        0x0000000102e23220 cxxbridge1$str$ptr + 2513480
+15  chromedriver                        0x0000000102df5cec cxxbridge1$str$ptr + 2327828
+16  chromedriver                        0x0000000102e3f8d4 cxxbridge1$str$ptr + 2629884
+17  chromedriver                        0x0000000102e3fa5c cxxbridge1$str$ptr + 2630276
+18  chromedriver                        0x0000000102e4ee80 cxxbridge1$str$ptr + 2692776
+19  libsystem_pthread.dylib             0x00000001975282e4 _pthread_start + 136
+20  libsystem_pthread.dylib             0x00000001975230fc thread_start + 8
+
+❌ Failed to apply to job: https://www.metacareers.com/jobs/1068968808205718/
+📩 Email sent successfully to k.saraswathi1222@gmail.com
+🌐 Opening job link: https://www.metacareers.com/jobs/2951102401712634/
+✅ only trying to close the previous tab
+✅ Detected element with class '_9csu '
+Element text content: Personal Information
+✅ Clicked on the 'Yes' radio button for work eligibility
+✅ Clicked on the 'No' radio button for requires sponsorship
+✅'work_auth_question found'
+✅ Clicked on the 'next_link_1' button
+✅ Detected element with class '_9csu '
+Element text content: Education
+✅ Clicked on the 'next_link_2' button
+✅ Detected element with class '_9csu '
+Element text content: Experience and Skills
+✅ Clicked on the 'next_link_3' button
+✅ Detected element with class '_9csu '
+Element text content: Voluntary Self-Identification
+✅ Clicked on the 'next_link_4' button
+✅ Clicked on the 'submit' button
+✅ Closed the current tab
+✅ Successfully applied to job: https://www.metacareers.com/jobs/2951102401712634/
+📩 Email sent successfully to k.saraswathi1222@gmail.com
+🌐 Opening job link: https://www.metacareers.com/jobs/651377263718284/
+✅ Opened Meta Careers login page.
+✅ Entered Email
+✅ Entered Password
+➡️ Pressed ENTER to log in.
+✅ Login successful. Now opening job links.
+🌐 Opening job link: https://www.metacareers.com/jobs/1068968808205718/
+✅ only trying to close the previous tab
+✅ Detected element with class '_9csu '
+Element text content: Personal Information
+✅ Checked checkbox with id: 2276949392586359
+✅ Checked checkbox with id: 357313535643925
+✅ Checked checkbox with id: 353745228761021
+❌ Failed to find or click the 'Yes' radio button for work eligibility. Error: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010052abac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x000000010052320c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000100089afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x00000001000d08f8 cxxbridge1$string$len + 383648
+4   chromedriver                        0x0000000100111b94 cxxbridge1$string$len + 650556
+5   chromedriver                        0x00000001000c4ba0 cxxbridge1$string$len + 335176
+6   chromedriver                        0x00000001004f3664 cxxbridge1$str$ptr + 2498188
+7   chromedriver                        0x00000001004f6978 cxxbridge1$str$ptr + 2511264
+8   chromedriver                        0x00000001004d8d04 cxxbridge1$str$ptr + 2389292
+9   chromedriver                        0x00000001004f7220 cxxbridge1$str$ptr + 2513480
+10  chromedriver                        0x00000001004c9cec cxxbridge1$str$ptr + 2327828
+11  chromedriver                        0x00000001005138d4 cxxbridge1$str$ptr + 2629884
+12  chromedriver                        0x0000000100513a5c cxxbridge1$str$ptr + 2630276
+13  chromedriver                        0x0000000100522e80 cxxbridge1$str$ptr + 2692776
+14  libsystem_pthread.dylib             0x00000001975282e4 _pthread_start + 136
+15  libsystem_pthread.dylib             0x00000001975230fc thread_start + 8
+
+❌ Failed to find or click the 'No' radio button for requires sponsorship. Error: Message: 
+Stacktrace:
+0   chromedriver                        0x000000010052abac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x000000010052320c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000100089afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x00000001000d08f8 cxxbridge1$string$len + 383648
+4   chromedriver                        0x0000000100111b94 cxxbridge1$string$len + 650556
+5   chromedriver                        0x00000001000c4ba0 cxxbridge1$string$len + 335176
+6   chromedriver                        0x00000001004f3664 cxxbridge1$str$ptr + 2498188
+7   chromedriver                        0x00000001004f6978 cxxbridge1$str$ptr + 2511264
+8   chromedriver                        0x00000001004d8d04 cxxbridge1$str$ptr + 2389292
+9   chromedriver                        0x00000001004f7220 cxxbridge1$str$ptr + 2513480
+10  chromedriver                        0x00000001004c9cec cxxbridge1$str$ptr + 2327828
+11  chromedriver                        0x00000001005138d4 cxxbridge1$str$ptr + 2629884
+12  chromedriver                        0x0000000100513a5c cxxbridge1$str$ptr + 2630276
+13  chromedriver                        0x0000000100522e80 cxxbridge1$str$ptr + 2692776
+14  libsystem_pthread.dylib             0x00000001975282e4 _pthread_start + 136
+15  libsystem_pthread.dylib             0x00000001975230fc thread_start + 8
+
+✅'work_auth_question found'
+✅ Clicked on the 'next_link_1' button
+✅ Detected element with class '_9csu '
+Element text content: Education
+✅ Clicked on the 'next_link_2' button
+✅ Detected element with class '_9csu '
+Element text content: Experience and Skills
+✅ Clicked on the 'next_link_3' button
+✅ Detected element with class '_9csu '
+Element text content: Voluntary Self-Identification
+✅ Clicked on the 'next_link_4' button
+❌ Failed to open job: https://www.metacareers.com/jobs/1068968808205718/ at review and submit Error: Message: element click intercepted: Element <button id="app...Button" class="_9cs2 _97fe">Submit</button> is not clickable at point (1171, 709). Other element would receive the click: <div class="x6s0dn4 x78zum5 xdt5ytf xh8yej3 xsxhxmc xealedp">...</div>
+  (Session info: chrome=133.0.6943.98)
+Stacktrace:
+0   chromedriver                        0x000000010052abac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x000000010052320c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000100089afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x00000001000d6398 cxxbridge1$string$len + 406848
+4   chromedriver                        0x00000001000d4928 cxxbridge1$string$len + 400080
+5   chromedriver                        0x00000001000d273c cxxbridge1$string$len + 391396
+6   chromedriver                        0x00000001000d1b38 cxxbridge1$string$len + 388320
+7   chromedriver                        0x00000001000c6630 cxxbridge1$string$len + 341976
+8   chromedriver                        0x00000001000c60bc cxxbridge1$string$len + 340580
+9   chromedriver                        0x0000000100111b94 cxxbridge1$string$len + 650556
+10  chromedriver                        0x00000001000c4ba0 cxxbridge1$string$len + 335176
+11  chromedriver                        0x00000001004f3664 cxxbridge1$str$ptr + 2498188
+12  chromedriver                        0x00000001004f6978 cxxbridge1$str$ptr + 2511264
+13  chromedriver                        0x00000001004d8d04 cxxbridge1$str$ptr + 2389292
+14  chromedriver                        0x00000001004f7220 cxxbridge1$str$ptr + 2513480
+15  chromedriver                        0x00000001004c9cec cxxbridge1$str$ptr + 2327828
+16  chromedriver                        0x00000001005138d4 cxxbridge1$str$ptr + 2629884
+17  chromedriver                        0x0000000100513a5c cxxbridge1$str$ptr + 2630276
+18  chromedriver                        0x0000000100522e80 cxxbridge1$str$ptr + 2692776
+19  libsystem_pthread.dylib             0x00000001975282e4 _pthread_start + 136
+20  libsystem_pthread.dylib             0x00000001975230fc thread_start + 8
+
+❌ Failed to apply to job: https://www.metacareers.com/jobs/1068968808205718/
+📩 Email sent successfully to k.saraswathi1222@gmail.com
+🌐 Opening job link: https://www.metacareers.com/jobs/2951102401712634/
+✅ only trying to close the previous tab
+✅ Detected element with class '_9csu '
+Element text content: Personal Information
+✅ Clicked on the 'Yes' radio button for work eligibility
+✅ Clicked on the 'No' radio button for requires sponsorship
+✅'work_auth_question found'
+✅ Clicked on the 'next_link_1' button
+✅ Detected element with class '_9csu '
+Element text content: Education
+✅ Clicked on the 'next_link_2' button
+✅ Detected element with class '_9csu '
+Element text content: Experience and Skills
+✅ Clicked on the 'next_link_3' button
+✅ Detected element with class '_9csu '
+Element text content: Voluntary Self-Identification
+✅ Clicked on the 'next_link_4' button
+✅ Opened Meta Careers login page.
+✅ Entered Email
+✅ Entered Password
+➡️ Pressed ENTER to log in.
+✅ Login successful. Now opening job links.
+🌐 Opening job link: https://www.metacareers.com/jobs/1068968808205718/
+✅ only trying to close the previous tab
+✅ Detected element with class '_9csu '
+Element text content: Personal Information
+✅ Checked checkbox with id: 2276949392586359
+✅ Checked checkbox with id: 357313535643925
+✅ Checked checkbox with id: 353745228761021
+❌ Failed to find or click the 'Yes' radio button for work eligibility. Error: Message: 
+Stacktrace:
+0   chromedriver                        0x00000001011eebac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x00000001011e720c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000100d4dafc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000100d948f8 cxxbridge1$string$len + 383648
+4   chromedriver                        0x0000000100dd5b94 cxxbridge1$string$len + 650556
+5   chromedriver                        0x0000000100d88ba0 cxxbridge1$string$len + 335176
+6   chromedriver                        0x00000001011b7664 cxxbridge1$str$ptr + 2498188
+7   chromedriver                        0x00000001011ba978 cxxbridge1$str$ptr + 2511264
+8   chromedriver                        0x000000010119cd04 cxxbridge1$str$ptr + 2389292
+9   chromedriver                        0x00000001011bb220 cxxbridge1$str$ptr + 2513480
+10  chromedriver                        0x000000010118dcec cxxbridge1$str$ptr + 2327828
+11  chromedriver                        0x00000001011d78d4 cxxbridge1$str$ptr + 2629884
+12  chromedriver                        0x00000001011d7a5c cxxbridge1$str$ptr + 2630276
+13  chromedriver                        0x00000001011e6e80 cxxbridge1$str$ptr + 2692776
+14  libsystem_pthread.dylib             0x00000001975282e4 _pthread_start + 136
+15  libsystem_pthread.dylib             0x00000001975230fc thread_start + 8
+
+❌ Failed to find or click the 'No' radio button for requires sponsorship. Error: Message: 
+Stacktrace:
+0   chromedriver                        0x00000001011eebac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x00000001011e720c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000100d4dafc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000100d948f8 cxxbridge1$string$len + 383648
+4   chromedriver                        0x0000000100dd5b94 cxxbridge1$string$len + 650556
+5   chromedriver                        0x0000000100d88ba0 cxxbridge1$string$len + 335176
+6   chromedriver                        0x00000001011b7664 cxxbridge1$str$ptr + 2498188
+7   chromedriver                        0x00000001011ba978 cxxbridge1$str$ptr + 2511264
+8   chromedriver                        0x000000010119cd04 cxxbridge1$str$ptr + 2389292
+9   chromedriver                        0x00000001011bb220 cxxbridge1$str$ptr + 2513480
+10  chromedriver                        0x000000010118dcec cxxbridge1$str$ptr + 2327828
+11  chromedriver                        0x00000001011d78d4 cxxbridge1$str$ptr + 2629884
+12  chromedriver                        0x00000001011d7a5c cxxbridge1$str$ptr + 2630276
+13  chromedriver                        0x00000001011e6e80 cxxbridge1$str$ptr + 2692776
+14  libsystem_pthread.dylib             0x00000001975282e4 _pthread_start + 136
+15  libsystem_pthread.dylib             0x00000001975230fc thread_start + 8
+
+✅'work_auth_question found'
+✅ Clicked on the 'next_link_1' button
+✅ Detected element with class '_9csu '
+Element text content: Education
+✅ Clicked on the 'next_link_2' button
+✅ Detected element with class '_9csu '
+Element text content: Experience and Skills
+✅ Clicked on the 'next_link_3' button
+✅ Detected element with class '_9csu '
+Element text content: Voluntary Self-Identification
+✅ Clicked on the 'next_link_4' button
+✅ Clicked on the 'submit' button
+✅ Closed the current tab
+✅ Successfully applied to job: https://www.metacareers.com/jobs/1068968808205718/
+📩 Email sent successfully to k.saraswathi1222@gmail.com
+🌐 Opening job link: https://www.metacareers.com/jobs/2951102401712634/
+✅ only trying to close the previous tab
+✅ Detected element with class '_9csu '
+Element text content: Personal Information
+✅ Clicked on the 'Yes' radio button for work eligibility
+✅ Clicked on the 'No' radio button for requires sponsorship
+✅'work_auth_question found'
+✅ Clicked on the 'next_link_1' button
+✅ Detected element with class '_9csu '
+Element text content: Education
+✅ Clicked on the 'next_link_2' button
+✅ Detected element with class '_9csu '
+Element text content: Experience and Skills
+✅ Clicked on the 'next_link_3' button
+✅ Detected element with class '_9csu '
+Element text content: Voluntary Self-Identification
+✅ Clicked on the 'next_link_4' button
+❌ Failed to open job: https://www.metacareers.com/jobs/2951102401712634/ at review and submit Error: Message: element click intercepted: Element <button id="app...Button" class="_9cs2 _97fe">Submit</button> is not clickable at point (1171, 711). Other element would receive the click: <div class="x6s0dn4 x78zum5 xdt5ytf xh8yej3 xsxhxmc xealedp">...</div>
+  (Session info: chrome=133.0.6943.98)
+Stacktrace:
+0   chromedriver                        0x00000001011eebac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x00000001011e720c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000100d4dafc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000100d9a398 cxxbridge1$string$len + 406848
+4   chromedriver                        0x0000000100d98928 cxxbridge1$string$len + 400080
+5   chromedriver                        0x0000000100d9673c cxxbridge1$string$len + 391396
+6   chromedriver                        0x0000000100d95b38 cxxbridge1$string$len + 388320
+7   chromedriver                        0x0000000100d8a630 cxxbridge1$string$len + 341976
+8   chromedriver                        0x0000000100d8a0bc cxxbridge1$string$len + 340580
+9   chromedriver                        0x0000000100dd5b94 cxxbridge1$string$len + 650556
+10  chromedriver                        0x0000000100d88ba0 cxxbridge1$string$len + 335176
+11  chromedriver                        0x00000001011b7664 cxxbridge1$str$ptr + 2498188
+12  chromedriver                        0x00000001011ba978 cxxbridge1$str$ptr + 2511264
+13  chromedriver                        0x000000010119cd04 cxxbridge1$str$ptr + 2389292
+14  chromedriver                        0x00000001011bb220 cxxbridge1$str$ptr + 2513480
+15  chromedriver                        0x000000010118dcec cxxbridge1$str$ptr + 2327828
+16  chromedriver                        0x00000001011d78d4 cxxbridge1$str$ptr + 2629884
+17  chromedriver                        0x00000001011d7a5c cxxbridge1$str$ptr + 2630276
+18  chromedriver                        0x00000001011e6e80 cxxbridge1$str$ptr + 2692776
+19  libsystem_pthread.dylib             0x00000001975282e4 _pthread_start + 136
+20  libsystem_pthread.dylib             0x00000001975230fc thread_start + 8
+
+❌ Failed to apply to job: https://www.metacareers.com/jobs/2951102401712634/
+📩 Email sent successfully to k.saraswathi1222@gmail.com
+🌐 Opening job link: https://www.metacareers.com/jobs/651377263718284/
+✅ Opened Meta Careers login page.
+✅ Entered Email
+✅ Entered Password
+➡️ Pressed ENTER to log in.
+✅ Login successful. Now opening job links.
+🌐 Opening job link: https://www.metacareers.com/jobs/1068968808205718/
+✅ only trying to close the previous tab
+✅ Detected element with class '_9csu '
+Element text content: Personal Information
+✅ Checked checkbox with id: 2276949392586359
+✅ Checked checkbox with id: 357313535643925
+✅ Checked checkbox with id: 353745228761021
+❌ Failed to find or click the 'Yes' radio button for work eligibility. Error: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000100f6abac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x0000000100f6320c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000100ac9afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000100b108f8 cxxbridge1$string$len + 383648
+4   chromedriver                        0x0000000100b51b94 cxxbridge1$string$len + 650556
+5   chromedriver                        0x0000000100b04ba0 cxxbridge1$string$len + 335176
+6   chromedriver                        0x0000000100f33664 cxxbridge1$str$ptr + 2498188
+7   chromedriver                        0x0000000100f36978 cxxbridge1$str$ptr + 2511264
+8   chromedriver                        0x0000000100f18d04 cxxbridge1$str$ptr + 2389292
+9   chromedriver                        0x0000000100f37220 cxxbridge1$str$ptr + 2513480
+10  chromedriver                        0x0000000100f09cec cxxbridge1$str$ptr + 2327828
+11  chromedriver                        0x0000000100f538d4 cxxbridge1$str$ptr + 2629884
+12  chromedriver                        0x0000000100f53a5c cxxbridge1$str$ptr + 2630276
+13  chromedriver                        0x0000000100f62e80 cxxbridge1$str$ptr + 2692776
+14  libsystem_pthread.dylib             0x000000018b9e02e4 _pthread_start + 136
+15  libsystem_pthread.dylib             0x000000018b9db0fc thread_start + 8
+
+❌ Failed to find or click the 'No' radio button for requires sponsorship. Error: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000100f6abac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x0000000100f6320c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000100ac9afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000100b108f8 cxxbridge1$string$len + 383648
+4   chromedriver                        0x0000000100b51b94 cxxbridge1$string$len + 650556
+5   chromedriver                        0x0000000100b04ba0 cxxbridge1$string$len + 335176
+6   chromedriver                        0x0000000100f33664 cxxbridge1$str$ptr + 2498188
+7   chromedriver                        0x0000000100f36978 cxxbridge1$str$ptr + 2511264
+8   chromedriver                        0x0000000100f18d04 cxxbridge1$str$ptr + 2389292
+9   chromedriver                        0x0000000100f37220 cxxbridge1$str$ptr + 2513480
+10  chromedriver                        0x0000000100f09cec cxxbridge1$str$ptr + 2327828
+11  chromedriver                        0x0000000100f538d4 cxxbridge1$str$ptr + 2629884
+12  chromedriver                        0x0000000100f53a5c cxxbridge1$str$ptr + 2630276
+13  chromedriver                        0x0000000100f62e80 cxxbridge1$str$ptr + 2692776
+14  libsystem_pthread.dylib             0x000000018b9e02e4 _pthread_start + 136
+15  libsystem_pthread.dylib             0x000000018b9db0fc thread_start + 8
+
+✅'work_auth_question found'
+✅ Clicked on the 'next_link_1' button
+✅ Detected element with class '_9csu '
+Element text content: Education
+✅ Clicked on the 'next_link_2' button
+✅ Detected element with class '_9csu '
+Element text content: Experience and Skills
+✅ Clicked on the 'next_link_3' button
+✅ Detected element with class '_9csu '
+Element text content: Voluntary Self-Identification
+✅ Clicked on the 'next_link_4' button
+✅ Clicked on the 'submit' button
+✅ Closed the current tab
+✅ Successfully applied to job: https://www.metacareers.com/jobs/1068968808205718/
+📩 Email sent successfully to k.saraswathi1222@gmail.com
+🌐 Opening job link: https://www.metacareers.com/jobs/2951102401712634/
+✅ only trying to close the previous tab
+✅ Detected element with class '_9csu '
+Element text content: Personal Information
+✅ Clicked on the 'Yes' radio button for work eligibility
+✅ Clicked on the 'No' radio button for requires sponsorship
+✅'work_auth_question found'
+✅ Clicked on the 'next_link_1' button
+✅ Detected element with class '_9csu '
+Element text content: Education
+✅ Clicked on the 'next_link_2' button
+✅ Detected element with class '_9csu '
+Element text content: Experience and Skills
+✅ Clicked on the 'next_link_3' button
+✅ Detected element with class '_9csu '
+Element text content: Voluntary Self-Identification
+✅ Clicked on the 'next_link_4' button
+✅ Clicked on the 'submit' button
+✅ Closed the current tab
+✅ Successfully applied to job: https://www.metacareers.com/jobs/2951102401712634/
+📩 Email sent successfully to k.saraswathi1222@gmail.com
+🌐 Opening job link: https://www.metacareers.com/jobs/651377263718284/
+❌ Failed to open job: https://www.metacareers.com/jobs/651377263718284/. Error: Message: 
+Stacktrace:
+0   chromedriver                        0x0000000100f6abac cxxbridge1$str$ptr + 2724820
+1   chromedriver                        0x0000000100f6320c cxxbridge1$str$ptr + 2693684
+2   chromedriver                        0x0000000100ac9afc cxxbridge1$string$len + 93348
+3   chromedriver                        0x0000000100b108f8 cxxbridge1$string$len + 383648
+4   chromedriver                        0x0000000100b51b94 cxxbridge1$string$len + 650556
+5   chromedriver                        0x0000000100b04ba0 cxxbridge1$string$len + 335176
+6   chromedriver                        0x0000000100f33664 cxxbridge1$str$ptr + 2498188
+7   chromedriver                        0x0000000100f36978 cxxbridge1$str$ptr + 2511264
+8   chromedriver                        0x0000000100f18d04 cxxbridge1$str$ptr + 2389292
+9   chromedriver                        0x0000000100f37220 cxxbridge1$str$ptr + 2513480
+10  chromedriver                        0x0000000100f09cec cxxbridge1$str$ptr + 2327828
+11  chromedriver                        0x0000000100f538d4 cxxbridge1$str$ptr + 2629884
+12  chromedriver                        0x0000000100f53a5c cxxbridge1$str$ptr + 2630276
+13  chromedriver                        0x0000000100f62e80 cxxbridge1$str$ptr + 2692776
+14  libsystem_pthread.dylib             0x000000018b9e02e4 _pthread_start + 136
+15  libsystem_pthread.dylib             0x000000018b9db0fc thread_start + 8
+
+🌐 Opening job link: https://www.metacareers.com/jobs/4122333734758668/
+✅ only trying to close the previous tab
+✅ Detected element with class '_9csu '
+Element text content: Personal Information
+✅ Clicked on the 'Yes' radio button for work eligibility
+✅ Clicked on the 'No' radio button for requires sponsorship
+✅'work_auth_question found'
+✅ Clicked on the 'next_link_1' button
+✅ Detected element with class '_9csu '
+Element text content: Education
+✅ Clicked on the 'next_link_2' button
+✅ Detected element with class '_9csu '
+Element text content: Experience and Skills
+✅ Clicked on the 'next_link_3' button
+✅ Detected element with class '_9csu '
+Element text content: Voluntary Self-Identification
+✅ Clicked on the 'next_link_4' button

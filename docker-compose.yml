@@ -1,0 +1,16 @@
+services:
+  job-applier:
+    build: .
+    container_name: job-applier
+    environment:
+      - META_EMAIL=${META_EMAIL}
+      - META_PASSWORD=${META_PASSWORD}
+      - EMAIL_SENDER=${EMAIL_SENDER}
+      - EMAIL_PASSWORD=${EMAIL_PASSWORD}
+      - EMAIL_RECEIVER=${EMAIL_RECEIVER}
+      - SMTP_SERVER=${SMTP_SERVER}
+      - SMTP_PORT=${SMTP_PORT}
+    volumes:
+      - .:/app
+    working_dir: /app
+    command: ["python", "main.py"]

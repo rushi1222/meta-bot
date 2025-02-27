@@ -1,38 +1,83 @@
-import yaml
+import os
 import time
-from selenium import webdriver
+import yaml
+from dotenv import load_dotenv
+
+from seleniumwire import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+
+# Only import ChromeDriverManager for local environment
 from webdriver_manager.chrome import ChromeDriverManager
-from apply import open_job_link  # Import function
-from email_notifier import send_email  # Import email function
 
-# Load credentials and job links from config.yaml
+from apply import open_job_link
+from email_notifier import send_email
+
+# ✅ Load environment variables
+load_dotenv()
+
+# ✅ Credentials from .env
+EMAIL = os.getenv("META_EMAIL")
+PASSWORD = os.getenv("META_PASSWORD")
+
+# ✅ Load job links
 with open("config.yaml", "r") as file:
-    config = yaml.safe_load(file)
+    JOB_LINKS = yaml.safe_load(file)["job_links"]
 
-EMAIL = config["meta_login"]["email"]
-PASSWORD = config["meta_login"]["password"]
-JOB_LINKS = config["job_links"]
+# Detect if running in Docker by checking for /.dockerenv
+IS_DOCKER = os.path.exists("/.dockerenv")
 
-# Set up Selenium WebDriver
+# ✅ Configure ChromeOptions
 options = Options()
-options.add_argument("--start-maximized")  # Open browser in full-screen mode
-options.add_argument("--disable-blink-features=AutomationControlled")  # Reduce bot detection
-options.add_experimental_option("excludeSwitches", ["enable-automation"])
-options.add_experimental_option("useAutomationExtension", False)
+options.add_argument("--headless")
+options.add_argument("--no-sandbox")
+options.add_argument("--disable-dev-shm-usage")
+options.add_argument("--disable-blink-features=AutomationControlled")
+options.add_argument("--disable-gpu")
+options.add_argument("--window-size=1920,1080")
 
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
-wait = WebDriverWait(driver, 10)  # Wait up to 10 seconds for elements to load
+# ✅ Selenium Wire options
+seleniumwire_options = {
+    "verify_ssl": True,
+    "request_storage": "memory",
+    "disable_capture": True
+}
 
-# Open Meta Careers Login Page
+if IS_DOCKER:
+    # ✅ Running inside Docker with Chromium + chromium-driver
+    print("🔹 Detected Docker Environment. Using /usr/bin/chromium & /usr/bin/chromedriver.")
+    options.binary_location = "/usr/bin/chromium"
+    driver_path = "/usr/bin/chromedriver"
+else:
+    # ✅ Running locally with ChromeDriverManager
+    print("🔹 Detected Local Environment. Using ChromeDriverManager.")
+    driver_path = ChromeDriverManager().install()
+
+# ✅ Build WebDriver
+driver = webdriver.Chrome(
+    service=Service(driver_path),
+    options=options,
+    seleniumwire_options=seleniumwire_options
+)
+
+# ✅ Intercept requests (spoof headers, etc.)
+def interceptor(request):
+    request.headers.update({
+        "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+        "Accept-Language": "en-US,en;q=0.9"
+    })
+driver.request_interceptor = interceptor
+
+wait = WebDriverWait(driver, 10)
+
+# ✅ Open Meta Careers
 driver.get("https://www.metacareers.com/login")
 print("✅ Opened Meta Careers login page.")
-time.sleep(2)  # Give the page a moment to start rendering
+time.sleep(2)
 
 try:
     # Locate and fill in Email
@@ -49,7 +94,7 @@ try:
     password_field.send_keys(Keys.RETURN)
     print("➡️ Pressed ENTER to log in.")
 
-    # (Optional) Give time for login to process
+    # Wait for login to process
     time.sleep(5)
     print("✅ Login successful. Now opening job links.")
 
@@ -68,18 +113,17 @@ try:
 
             # Send email notification
             send_email(subject, body)
-        except Exception as e:
-            print(f"❌ Failed to open job: {job_url}. Error: {e}")  # Log error
 
-        time.sleep(20)  # Small delay before next job
-    
-    print("🎉 All jobs applied to. Closing browser."
-          )
-    driver.quit()  # Close the browser
+        except Exception as e:
+            print(f"❌ Failed to open job: {job_url}. Error: {e}")
+
+        time.sleep(20)
+
+    print("🎉 All jobs applied to. Closing browser.")
+
 except Exception as e:
     print(f"❌ Error during login or main process: {e}")
-    driver.quit()
 
-# Keep the browser open indefinitely
-while True:
-    time.sleep(1)
+finally:
+    driver.quit()
+    print("✅ Script completed. Exiting.")

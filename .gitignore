@@ -13,3 +13,6 @@ __pycache__/
 .DS_Store
 # Ignore macOS system files
 .DS_Store
+
+# Ignore .env
+.env

@@ -1,0 +1,10 @@
+blinker==1.6
+PyYAML
+PyYAML
+selenium-wire
+webdriver-manager
+python-dotenv
+PyYAML
+requests
+blinker
+selenium
