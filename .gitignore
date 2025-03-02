@@ -19,3 +19,6 @@ __pycache__/
 
 # Ignore
 access_key.txt
+
+# Ignore 
+task-definition.json
