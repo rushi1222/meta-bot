@@ -16,3 +16,6 @@ __pycache__/
 
 # Ignore .env
 .env
+
+# Ignore
+access_key.txt
