@@ -1,69 +1,60 @@
 {
-    "taskDefinition": {
-        "taskDefinitionArn": "arn:aws:ecs:us-east-1:724772085373:task-definition/meta-cron-task:1",
-        "containerDefinitions": [
-            {
-                "name": "meta-cron-container",
-                "image": "724772085373.dkr.ecr.us-east-1.amazonaws.com/meta-bot:latest",
-                "cpu": 256,
-                "memory": 512,
-                "portMappings": [],
-                "essential": true,
-                "environment": [],
-                "mountPoints": [],
-                "volumesFrom": [],
-                "logConfiguration": {
-                    "logDriver": "awslogs",
-                    "options": {
-                        "awslogs-group": "/ecs/meta-cron-logs",
-                        "awslogs-region": "us-east-1",
-                        "awslogs-stream-prefix": "meta-cron"
-                    }
+    "family": "meta-cron-task",
+    "executionRoleArn": "arn:aws:iam::724772085373:role/ecsTaskExecutionRole",
+    "networkMode": "awsvpc",
+    "containerDefinitions": [
+        {
+            "name": "meta-cron-container",
+            "image": "724772085373.dkr.ecr.us-east-1.amazonaws.com/meta-bot:latest",
+            "cpu": 256,
+            "memory": 512,
+            "portMappings": [],
+            "essential": true,
+            "environment": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "secrets": [
+                {
+                    "name": "META_EMAIL",
+                    "valueFrom": "arn:aws:secretsmanager:us-east-1:724772085373:secret:metaCronSecrets:META_EMAIL::"
                 },
-                "systemControls": []
+                {
+                    "name": "META_PASSWORD",
+                    "valueFrom": "arn:aws:secretsmanager:us-east-1:724772085373:secret:metaCronSecrets:META_PASSWORD::"
+                },
+                {
+                    "name": "EMAIL_SENDER",
+                    "valueFrom": "arn:aws:secretsmanager:us-east-1:724772085373:secret:metaCronSecrets:EMAIL_SENDER::"
+                },
+                {
+                    "name": "EMAIL_PASSWORD",
+                    "valueFrom": "arn:aws:secretsmanager:us-east-1:724772085373:secret:metaCronSecrets:EMAIL_PASSWORD::"
+                },
+                {
+                    "name": "EMAIL_RECEIVER",
+                    "valueFrom": "arn:aws:secretsmanager:us-east-1:724772085373:secret:metaCronSecrets:EMAIL_RECEIVER::"
+                },
+                {
+                    "name": "SMTP_SERVER",
+                    "valueFrom": "arn:aws:secretsmanager:us-east-1:724772085373:secret:metaCronSecrets:SMTP_SERVER::"
+                },
+                {
+                    "name": "SMTP_PORT",
+                    "valueFrom": "arn:aws:secretsmanager:us-east-1:724772085373:secret:metaCronSecrets:SMTP_PORT::"
+                }
+            ],
+            "logConfiguration": {
+                "logDriver": "awslogs",
+                "options": {
+                    "awslogs-group": "/ecs/meta-cron-logs",
+                    "awslogs-region": "us-east-1",
+                    "awslogs-stream-prefix": "meta-cron"
+                }
             }
-        ],
-        "family": "meta-cron-task",
-        "executionRoleArn": "arn:aws:iam::724772085373:role/ecsTaskExecutionRole",
-        "networkMode": "awsvpc",
-        "revision": 1,
-        "volumes": [],
-        "status": "ACTIVE",
-        "requiresAttributes": [
-            {
-                "name": "com.amazonaws.ecs.capability.logging-driver.awslogs"
-            },
-            {
-                "name": "ecs.capability.execution-role-awslogs"
-            },
-            {
-                "name": "com.amazonaws.ecs.capability.ecr-auth"
-            },
-            {
-                "name": "com.amazonaws.ecs.capability.docker-remote-api.1.19"
-            },
-            {
-                "name": "ecs.capability.execution-role-ecr-pull"
-            },
-            {
-                "name": "com.amazonaws.ecs.capability.docker-remote-api.1.18"
-            },
-            {
-                "name": "ecs.capability.task-eni"
-            }
-        ],
-        "placementConstraints": [],
-        "compatibilities": [
-            "EC2",
-            "FARGATE"
-        ],
-        "requiresCompatibilities": [
-            "FARGATE"
-        ],
-        "cpu": "256",
-        "memory": "512",
-        "registeredAt": "2025-03-02T13:33:22.688000-05:00",
-        "registeredBy": "arn:aws:iam::724772085373:user/meta_cron_user"
-    },
-    "tags": []
+        }
+    ],
+    "requiresCompatibilities": ["FARGATE"],
+    "cpu": "256",
+    "memory": "512",
+    "volumes": []
 }
