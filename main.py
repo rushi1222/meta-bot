@@ -15,7 +15,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 from apply import open_job_link
-from email_notifier import send_email
+# from email_notifier import send_email
 
 # ✅ Load environment variables
 load_dotenv()

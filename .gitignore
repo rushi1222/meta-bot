@@ -3,8 +3,7 @@
 # Ignore Python virtual environment
 .venv/
 
-# Ignore config.yaml (or any sensitive files)
-config.yaml
+
 
 # Ignore compiled Python files
 __pycache__/
