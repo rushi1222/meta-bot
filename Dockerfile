@@ -18,6 +18,13 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copy the entire project
 COPY . .
 
+# Ensure the correct ChromeDriver version is installed
+RUN CHROMIUM_VERSION=$(chromium --version | awk '{print $2}') && \
+    CHROMEDRIVER_VERSION=$(curl -sS chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROMIUM_VERSION) && \
+    wget -q "https://chromedriver.storage.googleapis.com/$CHROMEDRIVER_VERSION/chromedriver_linux64.zip" -O /tmp/chromedriver.zip && \
+    unzip /tmp/chromedriver.zip -d /usr/local/bin/ && \
+    chmod +x /usr/local/bin/chromedriver
+
 # Use environment variables from .env file
 ENV PYTHONUNBUFFERED=1
 

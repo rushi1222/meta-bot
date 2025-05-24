@@ -15,7 +15,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 
 from apply import open_job_link
-# from email_notifier import send_email
+from email_notifier import send_email
 
 # ✅ Load environment variables
 load_dotenv()
@@ -33,7 +33,7 @@ IS_DOCKER = os.path.exists("/.dockerenv")
 
 # ✅ Configure ChromeOptions
 options = Options()
-options.add_argument("--headless")
+# options.add_argument("--headless")
 options.add_argument("--no-sandbox")
 options.add_argument("--disable-dev-shm-usage")
 options.add_argument("--disable-blink-features=AutomationControlled")
