@@ -20,11 +20,42 @@ def apply(driver, job_url):
     
     wait = WebDriverWait(driver, 10)
     
-    # Wait for "Apply to this job" link
-    apply_link = wait.until(EC.element_to_be_clickable((By.CSS_SELECTOR, 'div._arm- a._42ft')))
-    # Scroll into view, then click
-    driver.execute_script("arguments[0].scrollIntoView(true);", apply_link)
-    time.sleep(3)  # <--- 3 seconds pause here
+        # Wait for popup and close if exists
+    try:
+        print("🔍 Checking for popup...")
+
+        # Wait up to 5 seconds for the popup close button to appear
+        popup_close_button = WebDriverWait(driver, 5).until(
+            EC.element_to_be_clickable(
+                (By.XPATH, "//button[@type='button' and span[contains(text(), 'Close')]]")
+            )
+        )
+
+        driver.execute_script("arguments[0].scrollIntoView(true);", popup_close_button)
+        time.sleep(1)
+        popup_close_button.click()
+        print("✅ Closed the popup")
+
+        time.sleep(2)  # Let page settle
+    except Exception:
+        print("⚠️ No popup appeared — continuing as usual")
+
+    # Now continue to click the Apply button
+    try:
+        apply_link = wait.until(EC.presence_of_element_located(
+            (By.XPATH, "//a[contains(text(), 'Apply to this job')]")
+        ))
+        driver.execute_script("arguments[0].scrollIntoView(true);", apply_link)
+        time.sleep(1)
+        driver.execute_script("arguments[0].click();", apply_link)
+        print("✅ Clicked Apply using JS")
+    except Exception as e:
+        print(f"❌ Could not click Apply. Error: {e}")
+        driver.save_screenshot("apply_click_error.png")
+        return False
+
+    print("🛑 Paused for 10 seconds so you can inspect popup...")
+    time.sleep(10)  # <-- 2-minute manual inspection window - might be too long, adjust as needed
     apply_link.click()
     time.sleep(10)  # Wait for the new page to load
     
